@@ -21,7 +21,7 @@ const Main = () => {
 		<div className='mb-16'>
 			<img src={bgImg} alt='/' className='absolute top-2 w-full h-40 z-[-1]'/>
 
-			<div className='container mx-auto text-center mb-16 '>
+			<div className='container relative mx-auto text-center mb-16'>
 				<div data-aos='fade-up'>
 					<h1 className='text-5xl inline-block'>Landing template for <h3 className='inline'>startups</h3></h1>
 					<p className='mx-8 md:mx-16 lg:mx-48 px-4 text-xl font-medium my-3 py-4'>Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
@@ -33,7 +33,7 @@ const Main = () => {
 					</button>
 					<button 
 					className='my-2 sm:my-0 bg-zinc-800 hover:bg-zinc-700 text-white font-bold rounded-sm py-3 mx-2 px-16 sm:px-8 transition-all'>
-						<a href="https://davgrig1.github.io/landing-template-for-startups/" target='_blank' rel='noreferrer'>View on Github</a> 
+						<a href="https://github.com/DavGrig1/landing-template-for-startups" target='_blank' rel='noreferrer'>View on Github</a> 
 					</button>
 				</div>
 			</div>

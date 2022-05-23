@@ -8,11 +8,11 @@ const Navbar = () => {
 
 	const toggleNav = () => setMenuActive(!menuActive)
 
-	const NavbarBurger = () => {
+	const ToggleBurger = () => {
 		return (
 			<div className={menuActive ? 'menu active' : 'menu'}>
-				<div className='absolute z-1 w-full h-40 items-center justify-center flex flex-col sm:hidden bg-black/90'>
-					<a target='_blank' rel='noreferrer' href='https://davgrig1.github.io/landing-template-for-startups/' className='font-semibold tracking-wide text-white cursor-pointer'>Documentation</a>
+				<div className='absolute w-full h-40 items-center justify-center flex flex-col sm:hidden bg-black/90'>
+					<a target='_blank' rel='noreferrer' href='https://github.com/DavGrig1/landing-template-for-startups' className='font-semibold tracking-wide text-white cursor-pointer'>Documentation</a>
 					<button className='bg-indigo-500 hover:bg-indigo-500/80 text-white 
 					font-bold rounded-sm py-[6px] mt-8 px-20 transition-all'>Sign up</button>
 				</div>
@@ -21,7 +21,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<div data-aos='fade-up' className='mb-20'>
+		<div data-aos='fade-up' className='mb-20 relative z-10'>
 			<div className='h-20 w-full flex justify-between items-center sm:bg-transparent relative '>
 				<div className='mx-3'>
 					<img src={logoImg} alt='/' className='cursor-pointer'/>
@@ -33,7 +33,7 @@ const Navbar = () => {
 				</div>
 				
 				<div className='items-center sm:flex hidden'>
-					<a target='_blank' rel='noreferrer' href='https://davgrig1.github.io/landing-template-for-startups/'
+					<a target='_blank' rel='noreferrer' href='https://github.com/DavGrig1/landing-template-for-startups'
 						className='mr-16 font-semibold hover:text-white cursor-pointer'>Documentation
 					</a>
 					<button className='bg-indigo-500 hover:bg-indigo-500/80 text-white 
@@ -41,7 +41,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			
-			<NavbarBurger />
+			<ToggleBurger />
 		</div>
    )
 }
