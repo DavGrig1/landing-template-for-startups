@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+   p {
+      color: rgb(156 163 175);
+   }
+   h3 {
+      color: rgb(99 102 241);
+   }
+   h1 {
+      font-weight: 800 !important;
+      font-family: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+      line-height: 1;
+   }
+}

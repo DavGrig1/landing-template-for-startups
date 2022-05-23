@@ -1,0 +1,41 @@
+.menu {
+   position: absolute;
+   background-color: rgb(0 0 0 / 0.1);
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   transform: scaleY(0);
+   animation: toggleHeight 400ms reverse;
+}
+
+.menu.active {
+   transform: scaleY(1);
+   animation: toggleHeight 400ms;
+}
+
+@keyframes toggleHeight {
+   0% {
+      transform: scaleY(0);
+   }
+   100% {
+      transform: scaleY(1);
+   }
+}
+
+.xIcon {
+   position: absolute;
+}
+
+.burger,
+.xIcon {
+   height: 1.75rem;
+   transform: scaleX(0);
+   transition: transform 400ms ease;
+}
+
+.burger.active,
+.xIcon.active {
+   transform: scaleX(1);
+   transition: transform 400ms ease;
+}
