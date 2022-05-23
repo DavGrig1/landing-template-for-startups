@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import Header from './components/header/Header'
+import Navbar from './components/navbar/Navbar'
 import Features from './components/Features'
 import Main from './components/main/Main'
 import Workflow from './components/workflow/Workflow'
@@ -16,7 +16,7 @@ function App() {
 
    return (
       <div className='lg:mx-auto max-w-5xl sm:mx-4 text-white'>
-         <Header />
+         <Navbar />
          <Main />
          <Workflow />
          <Features />

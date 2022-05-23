@@ -33,7 +33,7 @@ const Main = () => {
 					</button>
 					<button 
 					className='my-2 sm:my-0 bg-zinc-800 hover:bg-zinc-700 text-white font-bold rounded-sm py-3 mx-2 px-16 sm:px-8 transition-all'>
-						<a href="https://github.com/DavGrig1/cloud-management" target='_blank' rel='noreferrer'>View on Github</a> 
+						<a href="https://davgrig1.github.io/landing-template-for-startups/" target='_blank' rel='noreferrer'>View on Github</a> 
 					</button>
 				</div>
 			</div>

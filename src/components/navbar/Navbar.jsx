@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import logoImg from '../../assets/logo.svg'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import './header.css';
+import './navbar.css';
 
-const Header = () => {
+const Navbar = () => {
 	const [menuActive, setMenuActive] = useState(false)
 
 	const toggleNav = () => setMenuActive(!menuActive)
@@ -11,8 +11,8 @@ const Header = () => {
 	const NavbarBurger = () => {
 		return (
 			<div className={menuActive ? 'menu active' : 'menu'}>
-				<div className='absolute w-full h-40 items-center justify-center flex flex-col sm:hidden bg-black/90'>
-					<a target='_blank' rel='noreferrer' href='https://github.com/DavGrig1/cloud-management' className='font-semibold tracking-wide text-white cursor-pointer'>Documentation</a>
+				<div className='absolute z-1 w-full h-40 items-center justify-center flex flex-col sm:hidden bg-black/90'>
+					<a target='_blank' rel='noreferrer' href='https://davgrig1.github.io/landing-template-for-startups/' className='font-semibold tracking-wide text-white cursor-pointer'>Documentation</a>
 					<button className='bg-indigo-500 hover:bg-indigo-500/80 text-white 
 					font-bold rounded-sm py-[6px] mt-8 px-20 transition-all'>Sign up</button>
 				</div>
@@ -33,7 +33,7 @@ const Header = () => {
 				</div>
 				
 				<div className='items-center sm:flex hidden'>
-					<a target='_blank' rel='noreferrer' href='https://github.com/DavGrig1/cloud-management'
+					<a target='_blank' rel='noreferrer' href='https://davgrig1.github.io/landing-template-for-startups/'
 						className='mr-16 font-semibold hover:text-white cursor-pointer'>Documentation
 					</a>
 					<button className='bg-indigo-500 hover:bg-indigo-500/80 text-white 
@@ -46,4 +46,4 @@ const Header = () => {
    )
 }
 
-export default Header
+export default Navbar
